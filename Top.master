@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/SiteTemplate.master" AutoEventWireup="true" CodeBehind="Top.master.cs" Inherits="Cot4.Top" %>
+
+<asp:Content ID="cntTop" ContentPlaceHolderID="cphTop" Runat="Server">
+<!-- cphTop과 연결된 Content 컨트롤에 상단 영역의 내용 삽입 -->
+	<table width="800px">
+		<tr>
+			<td width="150px"><img src="/WebEx/13/images/logo.bmp" height="60px" width="150px" />
+			</td>
+            <td valign="bottom" align="right">
+	            <td valign="bottom" align="right">
+                <a href="/WebEx/13/index.aspx">[홈]</a>
+                &nbsp;&nbsp;&nbsp;<a href="/WebEx/13/MailingListSendMail.aspx">[메일링]</a>
+                &nbsp;&nbsp;&nbsp;<a href="/WebEx/13/Board/List.aspx">[게시판]</a>
+                &nbsp;&nbsp;&nbsp;<a href="/WebEx/13/Scheduler/Diary.aspx">[일정관리]</a>
+                &nbsp;&nbsp;&nbsp;<a href="/WebEx/13/WebPartPage.aspx">[MyPage]</a>
+            </td>
+			<td valign="bottom" align="right" width="100px">
+			<img src="/WebEx/13/images/side.bmp" height="40px" width="60px"/></td>
+		</tr>
+	</table>
+	<hr />
+</asp:Content>
+
+<asp:Content ID="cntLeft" ContentPlaceHolderID="cphLeft" Runat="Server">
+<!-- 다른 Content 컨트롤에는 ContentPlaceHolder 삽입 -->
+	<asp:ContentPlaceHolder ID="cphLeft" runat="server">
+	</asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="cntContent" ContentPlaceHolderID="cphContent" Runat="Server">
+	<asp:ContentPlaceHolder ID="cphContent" runat="server">
+	</asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="cntBottom" ContentPlaceHolderID="cphBottom" Runat="Server">
+	<asp:ContentPlaceHolder ID="cphBottom" runat="server">
+	</asp:ContentPlaceHolder>
+</asp:Content>

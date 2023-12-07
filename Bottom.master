@@ -1,0 +1,10 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Left.master" AutoEventWireup="true" CodeBehind="Bottom.master.cs" Inherits="Cot4.Bottom" %>
+
+<asp:Content ID="cntContent" ContentPlaceHolderID="cphContent" Runat="Server">
+	<asp:ContentPlaceHolder ID="cphContent" runat="server">
+	</asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="cntBottom" ContentPlaceHolderID="cphBottom" Runat="Server">
+	<hr />
+	Copyleft <img src="/WebEx/13/images/copyleft.png" style="height: 12px; width: 12px" /> Since 2011
+</asp:Content>
